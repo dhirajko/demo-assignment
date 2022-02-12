@@ -1,0 +1,29 @@
+.main-body {
+    min-height: calc(100vh - 80px);
+    margin: 0 15px;
+}
+
+.controller {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
