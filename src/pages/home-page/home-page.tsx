@@ -2,8 +2,9 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import "./home-page.css";
 import Card from "../../component/card/card";
+import { HomePageProps } from '../../model/home-page-props';
 
-const HomePage: FC = () => {
+const HomePage: FC<HomePageProps> = ({projects, removeProject}: HomePageProps) => {
     return (
         <div className="main-body">
             <div className="controller">
@@ -16,13 +17,7 @@ const HomePage: FC = () => {
                 </select>
             </div>
             <div className="card-container">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                {projects.map((project) => <Card key={project.id} project={project} removeProject={removeProject}/>)}
             </div>
         </div>
     );
