@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+<!-- ABOUT THE PROJECT -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About The Project
 
-## Available Scripts
+This application is a part of assignment where a user can github repositories among other users. The application was focused on sharing gitub repos with additional information like rating, created date, and links to repo.
 
-In the project directory, you can run:
+## Built With
 
-### `yarn start`
+This is React application with TypeScript. The major stacks that are used to develop projects are as follows
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Other package used
+- [dayjs](https://day.js.org/)
+- [Yup](https://www.npmjs.com/package/yup)
+- [uuid]https://www.npmjs.com/package/uuid)
+- [Formik](https://formik.org/docs/overview)
 
-### `yarn test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to run this, you should have node in your device. 
 
-### `yarn build`
+You can download and install requirements from the following links:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node](https://nodejs.org/en/)
+- [Mongodb](https://www.mongodb.com/) or [Mlab](https://www.mlab.com/)
+- [Cloudinary](https://cloudinary.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running project in local machine
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. clone the current repo with the following ccomman
+```sh
+git clone https://github.com/dhirajko/giosg-assignment.git
+```
 
-### `yarn eject`
+2. open the clone folder in terminal and install the required package with following command (you should be in root folder)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. When installation finished. Run following command.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+npm start
+```
+## App Demo Link
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Demo](https://gisog-demo.netlify.app/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
