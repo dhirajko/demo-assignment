@@ -3,7 +3,7 @@ import HomePage from "../pages/home-page/home-page";
 import { Project } from "../model/project";
 import { getItem, setItem } from "../service/storage";
 import { PROJECTS } from "../config/constants";
-import {projects as p} from "../assets/projects";
+import {projects as defaultProjects} from "../assets/projects";
 import { Sorting } from "../model/sorting";
 import {default as dayjs} from "dayjs";
 
@@ -11,7 +11,11 @@ const HomePageContainer: FC = () => {
     const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(()=>{
-        setProjects(JSON.parse(getItem(PROJECTS)) || p);
+        const getLocalProjects = getItem(PROJECTS);
+        if(!getLocalProjects) {
+            setItem(PROJECTS, defaultProjects);
+        }
+        setProjects(JSON.parse(getItem(PROJECTS)));
     },[]);
 
     const removeProject = (id: string) => {
