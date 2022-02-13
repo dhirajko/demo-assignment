@@ -47,11 +47,17 @@ form  > div > input:focus, form  > div > input:hover  {
 	cursor:pointer;
 	color:#ffffff;
 	padding:6px 24px;
+    margin: 0 0 0 15px;
 }
 
 .submit-button:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
 	background-color:#0061a7;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .submit-button:active {

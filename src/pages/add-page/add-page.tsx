@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 import "./add-page.css";
 import { Formik, Form, Field } from "formik";
 import { AddFormProps } from '../../model/add-form-props';
@@ -45,7 +46,10 @@ const AddForm: FC<AddFormProps> = ({addProject}: AddFormProps) => {
                             <Field id ="rating" name="rating" type="r"/>
                         </div>
                         <div className="error-message">{errors.rating && touched.rating ? errors.rating : null}</div>
-                        <button type="submit" className="submit-button">Submit</button>
+                        <div className="button-group">
+                            <button type="submit" className="submit-button">Submit</button>
+                            <Link to="/"><button type="button" className="submit-button">Cancel</button></Link>
+                        </div>
                     </Form>
                 )}
             </Formik>
