@@ -14,7 +14,7 @@ This is React application with TypeScript. The major stacks that are used to dev
 #### Other package used
 - [dayjs](https://day.js.org/)
 - [Yup](https://www.npmjs.com/package/yup)
-- [uuid]https://www.npmjs.com/package/uuid)
+- [uuid](https://www.npmjs.com/package/uuid)
 - [Formik](https://formik.org/docs/overview)
 
 ## Prerequisites
