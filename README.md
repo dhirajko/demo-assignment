@@ -24,9 +24,6 @@ In order to run this, you should have node in your device.
 You can download and install requirements from the following links:
 
 - [Node](https://nodejs.org/en/)
-- [Mongodb](https://www.mongodb.com/) or [Mlab](https://www.mlab.com/)
-- [Cloudinary](https://cloudinary.com/)
-
 ## Running project in local machine
 
 1. clone the current repo with the following ccomman
