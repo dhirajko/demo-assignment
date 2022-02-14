@@ -28,7 +28,7 @@ You can download and install requirements from the following links:
 
 1. clone the current repo with the following ccomman
 ```sh
-git clone https://github.com/dhirajko/giosg-assignment.git
+git clone https://github.com/dhirajko/demo-assignment.git
 ```
 
 2. open the clone folder in terminal and install the required package with following command (you should be in root folder)
