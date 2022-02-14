@@ -44,6 +44,6 @@ npm start
 ```
 ## App Demo Link
 
-[Demo](https://gisog-demo.netlify.app/)
+[Demo](https://git-demo-assignment.netlify.app/)
 
 
