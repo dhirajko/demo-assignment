@@ -1,8 +1,6 @@
-import React, { FC }  from "react";
-import "./nav.css";
+import React, { FC } from 'react';
+import './nav.css';
 
-const Nav: FC = () => {
-    return <div className="nav">Awesome Project</div>;
-}
+const Nav: FC = () => <div className="nav">Awesome Project</div>;
 
 export default Nav;
