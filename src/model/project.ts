@@ -3,5 +3,5 @@ export interface Project{
     name: string;
     url: string;
     rating: string,
-    created_at: string;
+    createdAt: string;
   }
